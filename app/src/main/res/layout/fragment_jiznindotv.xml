@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jiznindotv">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Жизненный индекс (мл/кг)"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tooot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат: "
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- норма 50-61 мл/кг; если показатель меньше, то это может свидетельствовать о недостаточности кислород обеспечения организма, недостаточной жизненной емкости легких, либо избыточной массе тела
+- для обследуемых, имеющих жизненный индекс ниже нормы рекомендуются физические упражнения средней интенсивности, наряду с этим допускается чередование высокоинтенсивных (молодой и средний возраст) и малоинтенсивных тренировочных нагрузок.
+- на увеличение жизненной емкости легких влияют регулярные занятия физической культурой и спортом, особенно занятия аэробной направленности (бег, велопрогулки, плавание, аэробика, работа на кардиотренажерах, спортивные игры и другие).
+-при большой жизненной емкости (ЖЕЛ) легкие лучше вентилируются и организм получает больше кислорода. Норма ЖЕЛ у мужчин 3500-5000 мл, у женщин 2500-4000 мл. В исследовании РЭУ им. Г.В. Плеханова ЖЕЖ у девушек 2100-2600 мл, у юношей 3800-4150 мл.
+-у лиц, не занимающихся физической культурой и спортом чаще всего, жизненная емкость легких ниже по сравнению с лицами регулярно занимающимися ФКиС
+- жизненный индекс на 10-12% ниже у лиц имеющих избыточную массу тела
+"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tooot2" />
+
+    <Button
+        android:id="@+id/prod5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продолжить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

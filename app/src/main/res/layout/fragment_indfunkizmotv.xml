@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".indfunkizmotv">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Индекс функциональных изменений"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stradaniye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат: "
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оценку индекса функциональных изменений (ИФИ) осуществляют по следующей шкале:
+ИФИ менее 2,6 — функциональные возможности системы кровообращения хорошие. Механизмы адаптации устойчивы: действие неблагоприятных факторов студенческого образа жизни успешно компенсируется мобилизацией внутренних резервов организма, эмпирически подобранными профилактическими мероприятиями (увлечение спортом, рациональное распределение времени на работу и отдых, адекватная организация питания).
+ИФИ, равный 2,6—3,09 — удовлетворительные функциональные возможности системы кровообращения с умеренным напряжением механизмов регуляции. Эта категория практически здоровых людей, имеющих скрытые или нераспознанные заболевания, нуждающихся в дополнительном обследовании. Скрытые или неясно выраженные нарушения процессов адаптации могут быть восстановлены с помощью методов нелекарственной коррекции (массаж, мышечная релаксация, дыхательная гимнастика, аутотренинг), компенсирующих недостаточность или слабость внутреннего звена саморегуляции функций.
+ИФИ более 3,09 — сниженные, недостаточные возможности системы кровообращения, наличие выраженных нарушений процессов адаптации. Необходима полноценная диагностика, квалифицированное лечение и индивидуальный подбор профилактических мероприятий в период ремиссии.
+"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stradaniye" />
+
+    <Button
+        android:id="@+id/prod8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продолжить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

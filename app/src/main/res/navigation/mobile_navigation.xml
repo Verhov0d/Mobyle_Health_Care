@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.praktikazim.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.praktikazim.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_masstel"
+            app:destination="@id/masstel" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_kerdo"
+            app:destination="@id/kerdo" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_dvigakt"
+            app:destination="@id/dvigakt" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_vinosl"
+            app:destination="@id/vinosl" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_serdsist"
+            app:destination="@id/serdsist" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_jiznind"
+            app:destination="@id/jiznind" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_skibinski"
+            app:destination="@id/skibinski" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_indfunkizm"
+            app:destination="@id/indfunkizm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.praktikazim.ui.notifications.NotificationsFragment"
+        android:label="07.12.2021"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/masstel"
+        android:name="com.example.praktikazim.masstel"
+        android:label="fragment_masstel"
+        tools:layout="@layout/fragment_masstel" >
+        <action
+            android:id="@+id/action_masstel_to_msotv"
+            app:destination="@id/msotv" />
+    </fragment>
+    <fragment
+        android:id="@+id/dvigakt"
+        android:name="com.example.praktikazim.dvigakt"
+        android:label="fragment_dvigakt"
+        tools:layout="@layout/fragment_dvigakt">
+        <action
+            android:id="@+id/action_dvigakt_to_dvigotv"
+            app:destination="@id/dvigotv" />
+    </fragment>
+    <fragment
+        android:id="@+id/vinosl"
+        android:name="com.example.praktikazim.vinosl"
+        android:label="fragment_vinosl"
+        tools:layout="@layout/fragment_vinosl" >
+        <action
+            android:id="@+id/action_vinosl_to_vinosotv"
+            app:destination="@id/vinosotv" />
+    </fragment>
+    <fragment
+        android:id="@+id/serdsist"
+        android:name="com.example.praktikazim.serdsist"
+        android:label="fragment_serdsist"
+        tools:layout="@layout/fragment_serdsist" >
+        <action
+            android:id="@+id/action_serdsist_to_serdsistotv"
+            app:destination="@id/serdsistotv" />
+    </fragment>
+    <fragment
+        android:id="@+id/jiznind"
+        android:name="com.example.praktikazim.jiznind"
+        android:label="fragment_jiznind"
+        tools:layout="@layout/fragment_jiznind" >
+        <action
+            android:id="@+id/action_jiznind_to_jiznindotv"
+            app:destination="@id/jiznindotv" />
+    </fragment>
+    <fragment
+        android:id="@+id/skibinski"
+        android:name="com.example.praktikazim.skibinski"
+        android:label="fragment_skibinski"
+        tools:layout="@layout/fragment_skibinski" >
+        <action
+            android:id="@+id/action_skibinski_to_skibotv"
+            app:destination="@id/skibotv" />
+    </fragment>
+    <fragment
+        android:id="@+id/kerdo"
+        android:name="com.example.praktikazim.kerdo"
+        android:label="fragment_kerdo"
+        tools:layout="@layout/fragment_kerdo" >
+        <action
+            android:id="@+id/action_kerdo_to_kerdootv"
+            app:destination="@id/kerdootv" />
+    </fragment>
+    <fragment
+        android:id="@+id/indfunkizm"
+        android:name="com.example.praktikazim.indfunkizm"
+        android:label="fragment_indfunkizm"
+        tools:layout="@layout/fragment_indfunkizm" >
+        <action
+            android:id="@+id/action_indfunkizm_to_indfunkizmotv"
+            app:destination="@id/indfunkizmotv" />
+    </fragment>
+    <fragment
+        android:id="@+id/msotv"
+        android:name="com.example.praktikazim.msotv"
+        android:label="fragment_msotv"
+        tools:layout="@layout/fragment_msotv" />
+    <fragment
+        android:id="@+id/dvigotv"
+        android:name="com.example.praktikazim.dvigotv"
+        android:label="fragment_dvigotv"
+        tools:layout="@layout/fragment_dvigotv" />
+    <fragment
+        android:id="@+id/vinosotv"
+        android:name="com.example.praktikazim.vinosotv"
+        android:label="fragment_vinosotv"
+        tools:layout="@layout/fragment_vinosotv" />
+    <fragment
+        android:id="@+id/serdsistotv"
+        android:name="com.example.praktikazim.serdsistotv"
+        android:label="fragment_serdsistotv"
+        tools:layout="@layout/fragment_serdsistotv" />
+    <fragment
+        android:id="@+id/jiznindotv"
+        android:name="com.example.praktikazim.jiznindotv"
+        android:label="fragment_jiznindotv"
+        tools:layout="@layout/fragment_jiznindotv" />
+    <fragment
+        android:id="@+id/skibotv"
+        android:name="com.example.praktikazim.skibotv"
+        android:label="fragment_skibotv"
+        tools:layout="@layout/fragment_skibotv" />
+    <fragment
+        android:id="@+id/kerdootv"
+        android:name="com.example.praktikazim.kerdootv"
+        android:label="fragment_kerdootv"
+        tools:layout="@layout/fragment_kerdootv" />
+    <fragment
+        android:id="@+id/indfunkizmotv"
+        android:name="com.example.praktikazim.indfunkizmotv"
+        android:label="fragment_indfunkizmotv"
+        tools:layout="@layout/fragment_indfunkizmotv" />
+</navigation>

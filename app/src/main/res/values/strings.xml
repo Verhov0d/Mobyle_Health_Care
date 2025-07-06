@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">praktikazim</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string-array name="spin">
+        <item name="man">Мужчина</item>
+        <item name="woman">Женщина</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skibtext">Оценка индекса: меньше 5 усл. ед. – очень плохо (низкий уровень выносливость сердечно-сосудистой и дыхательной систем), 5-10 – неудовлетворительно, 10-30 – удовлетворительно, 30-60 – хорошо, больше 60 – очень хорошо (высокий уровень выносливости). - проба Штанге (с), определяющая гипоксическую устойчивость организма (время задержки дыхания на вдохе). - индекс Скибински характеризует состояние сердечно-сосудистой и дыхательной систем.</string>
+    <string name="_5000_7500_9999_10_12_12_5">меньше 5000 шагов в день – «сидячая работа»; 7500-9999 шагов в день – «несколько активная работа»; 10-12 тыс. шагов – «активный образ жизни»; свыше 12,5 тыс. шагов – «очень активный образ жизни»</string>
+</resources>

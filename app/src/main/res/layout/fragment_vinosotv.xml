@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vinosotv">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Коэффицент выносливости (усл. ед.)"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат: "
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В норме коэффициент выносливости – 16 усл. ед.,
+- результат меньше 16 усл. ед. свидетельствует об усилении кардиореспираторной системы
+- увеличение указывает на ослабление деятельности сердечно-сосудистой системы или детренированности обследуемого
+- при занятиях спортом коэффициент выносливости может быть ниже 16 усл.ед., из-за укрепления сердечно-сосудистой системы, коэффициент выносливости коррелирует с уровнем физической работоспособности организма
+- пульсовое давление ПД (САД-ДАД), необходимое для подсчета коэффициента выносливости в среднем составляет 40 мм рт.ст.
+- функционирование сердечно-сосудистой системы можно представить
+как причинно-следственный процесс причиной (входом) которого является
+систолическое АД (САД), а следствием (выходом) – диастолическое АД (ДАД), зависимость выхода от входа опосредуется через пульсовое давление ПД= САД – ДАД
+- ПД (пульсовое давление) является переходной функцией (оператором)
+нейрогуморальной регуляции кровообращения.
+- для улучшения коэффициента выносливости сердечно-сосудистой системы следует заниматься ФКиС не менее трех раз в неделю, совершать 10-12,5 тысяч шагов в сутки
+"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/prod3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продолжить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

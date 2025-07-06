@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".msotv">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Индекс массы тела (кг/м2)"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vivodm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат: "
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 16-18,5 кг/м2 и менее, то наблюдается недостаток массы тела,
+- 18,5-25 кг/м2 – норма,
+25-30 кг/м2 – избыточная масса тела,
+30-35 кг/м2 – первая степень ожирения,
+35-40 кг/м2 – вторая степень ожирения,
+свыше 40 кг/м2 – третья степень ожирения.
+- индекс не учитывает пол, возраст, распределение в организме жирового и мышечного компонента тела
+- средние значения индекса, полученные в РЭУ им. Г.В. Плеханова составили у девушек – 19-23 кг/м2, у юношей 20-23 кг/м2
+- у представителей молодого возраста (до 30 лет) индекс массы тела ниже по сравнению с представителями среднего возраста
+- для поддержания оптимальной массы тела необходимо ходить не менее 10 тысяч шагов в сутки
+- по индексу массы тела можно лишь косвенно судить о норме, недостатке или избыточной массе тела
+- при индексе свыше 25 кг/м2 необходимо подключить онлайн-калькулятор питания и контролировать полученные калории, увеличить прогулки на свежем воздухе, ограничить хлебобулочные изделия"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vivodm" />
+
+    <Button
+        android:id="@+id/prod1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продолжить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
